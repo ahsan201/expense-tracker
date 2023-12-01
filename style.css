@@ -195,8 +195,14 @@ table {
 #name {
   font-weight: bold;
 }
-#event {
+#eventIncome {
   background-color: #2bd600;
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+}
+#eventOutcome {
+  background-color: red;
   padding: 5px;
   border-radius: 4px;
   color: white;
@@ -220,11 +226,16 @@ table {
   background-color: #0072e1;
   border-radius: 25px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px 20px;
+  padding: 10px 30px;
+  justify-content: center;
 }
 .inputBoxes {
-  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 #nameInput {
   height: 40px;
@@ -240,11 +251,6 @@ table {
   border-radius: 10px;
 }
 
-.buttonElement {
-  display: flex;
-  column-gap: 20px;
-}
-
 .buttonElement button {
   color: white;
   font-size: 17px;
@@ -252,4 +258,14 @@ table {
   padding: 5px 8px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.errorName {
+  display: inline-block;
+  color: red;
+}
+.errorNumber {
+  display: inline-block;
+  color: red;
 }
